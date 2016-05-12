@@ -5,26 +5,26 @@ message是一个信息提示、弹窗提醒、对话框的小插件
 
 ##message有哪些弹窗？
 
-* ###信息提示条
-    *  ##### 错误信息提示条
-    *  ##### 成功信息提示条
-*  ### 确认弹窗
-*  ### 单按钮确认对话框
-*  ### 双按钮确认对话框
+* 信息提示条
+    * 错误信息提示条
+    * 成功信息提示条
+*  确认弹窗
+*  单按钮确认对话框
+*  双按钮确认对话框
 
 
 ##参数说明
-*  ### throwError：参数分别为错误信息，回调函数，成功提示框/错误提示框（true/false）
+*  throwError：参数分别为错误信息，回调函数，成功提示框/错误提示框（true/false）
     * 第三个参数可以缺省，缺省则为错误提示框，错误提示框和成功提示框仅文字颜色不一样，文字颜色可以在css中自定义
-*  ### showConfirm：确认提示框，第一个参数为文字标题，第二个参数为确认按钮回调函数，其中取消按钮默认误操作，只移除弹窗
-*  ### showDialog：确认对话框，参数分别为：文字标题，按钮文字，按钮回调函数，是否双按钮（true/false）
+*  showConfirm：确认提示框，第一个参数为文字标题，第二个参数为确认按钮回调函数，其中取消按钮默认误操作，只移除弹窗
+*  showDialog：确认对话框，参数分别为：文字标题，按钮文字，按钮回调函数，是否双按钮（true/false）
     * 后两个参数可以缺省，缺省则为单按钮提示框
     * 单按钮默认操作为移除对话框，文字可自定义（第二个参数）
     * 双按钮默认两个按钮均为取消按钮，右边按钮可自定义文字（第二个参数）及回调函数（第三个参数）
-*  ### bindTap：辅助功能，给按钮绑定点击效果，也可单独使用，只需传入需要绑定点击效果的节点，默认按下为灰色，可在css中自定义
-*  ### 具体使用可参照Demo，其中bass.css和demo.css为样式初始化及demo样式，具体业务中无需引入
-*  ### Demo演示地址：[http://web677.com/demo/html/message.html](http://web677.com/demo/html/message.html)
-*  ### 插件下载地址：[https://github.com/web677/message/](https://github.com/web677/message/)
+*  bindTap：辅助功能，给按钮绑定点击效果，也可单独使用，只需传入需要绑定点击效果的节点，默认按下为灰色，可在css中自定义
+*  具体使用可参照Demo，其中bass.css和demo.css为样式初始化及demo样式，具体业务中无需引入
+*  Demo演示地址：[http://web677.com/demo/html/message.html](http://web677.com/demo/html/message.html)
+*  插件下载地址：[https://github.com/web677/message/](https://github.com/web677/message/)
 
 ## 兼容性
 * -webkit-内核移动端浏览器
