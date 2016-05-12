@@ -1,0 +1,12 @@
+.btn_com{
+	width: 92%;
+	height: 4.5rem;
+	display: block;
+	margin: 3rem auto 0.8rem;
+	font-size: 1.7rem;
+	color: #fff;
+	line-height: 4.5rem;
+	border-radius: 3px;
+	background:#ffb304;
+	text-shadow: 1px 1px 1px rgba(193,138,0,0.1);
+}

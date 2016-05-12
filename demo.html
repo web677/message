@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>信息提示框</title>
+	<link rel="stylesheet" type="text/css" href="src/css/base.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/message.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/demo.css">
+</head>
+<body>
+	<input class="btn_com" value="错误提示框" id="demo1" type="button"/>
+	<input class="btn_com" value="成功提示框" id="demo2" type="button"/>
+	<input class="btn_com" value="确认提示框" id="demo3" type="button"/>
+	<input class="btn_com" value="单按钮对话提示框" id="demo4" type="button"/>
+	<input class="btn_com" value="双按钮对话提示框" id="demo5" type="button"/>
+	<script src="src/js/message.min.js"></script>
+	<script>
+		document.getElementById("demo1").onclick = function() {
+			msg.throwError("错误提示框");
+		}
+
+		document.getElementById("demo2").onclick = function() {
+			msg.throwError("成功提示框",function() {
+//				回调函数
+				alert("我是成功提示框回调函数");
+			},true);
+		}
+
+		document.getElementById("demo3").onclick = function() {
+			msg.showConfirm("是否删除银行卡？",function() {
+//				回调函数
+				msg.throwError("删除成功");
+			});
+		}
+
+		document.getElementById("demo4").onclick = function() {
+			msg.showDialog(
+				"当前不在服务时间，请稍后询问！",
+				"我知道啦"
+			);
+		}
+
+		document.getElementById("demo5").onclick = function() {
+			msg.showDialog(
+					"当前银行卡余额不足,是否充值",
+					"充值",
+					function(){
+//						回调函数
+						msg.throwError("正在连接充值界面");
+					},
+					true
+			);
+		}
+	</script>
+</body>
+</html>
