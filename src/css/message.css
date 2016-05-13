@@ -74,7 +74,7 @@
 	position: fixed;
 	top: 50%;
 	left: 8%;
-	margin-top: -70px;
+	margin-top: -100px;
 	border: 1px solid #bebfbf;
 	border-radius: 5px;
 	padding:30px 0px 0px;
@@ -122,20 +122,20 @@
 .btn-tap-on{background:#b4b3b3;}
 /*弹窗出来动画*/
 .confirm-on{
-	-webkit-animation: confirmShow 0.2s 1 ease-in forwards;
-			animation: confirmShow 0.2s 1 ease-in forwards;
+	-webkit-animation: confirmShow 0.1s 1 ease-out forwards;
+			animation: confirmShow 0.1s 1 ease-out forwards;
 }
 .confirm-off{
-	-webkit-animation: confirmHide 0.3s 1 ease-in forwards;
-			animation: confirmHide 0.3s 1 ease-in forwards;
+	-webkit-animation: confirmHide 0.2s 1 ease-out forwards;
+			animation: confirmHide 0.2s 1 ease-out forwards;
 }
 .mask-on,.com-modal-on{
-	-webkit-animation: maskFadein 0.2s 1 ease-in forwards;
-			animation: maskFadein 0.2s 1 ease-in forwards;
+	-webkit-animation: maskFadein 0.1s 1 ease-out forwards;
+			animation: maskFadein 0.1s 1 ease-out forwards;
 }
 .mask-off,.com-modal-off{
-	-webkit-animation: maskFadeout 0.2s 1 ease-in forwards;
-			animation: maskFadeout 0.2s 1 ease-in forwards;
+	-webkit-animation: maskFadeout 0.1s 1 ease-out forwards;
+			animation: maskFadeout 0.1s 1 ease-out forwards;
 }
 /*错误提示框*/
 @-webkit-keyframes error{
